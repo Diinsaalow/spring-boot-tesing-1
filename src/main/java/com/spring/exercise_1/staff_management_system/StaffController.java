@@ -15,13 +15,13 @@ public class StaffController {
     }
 
     //    Get All Staffs
-    @GetMapping("/all")
+    @GetMapping()
     public Collection<StaffModel> getAllStaffs() {
         return staffService.getAllStaffs();
     }
 
     //    Add New Staff
-    @PostMapping("/add")
+    @PostMapping()
     public void addStaff(@RequestBody StaffModel newStaff) {
         staffService.addStaff(newStaff);
     }
